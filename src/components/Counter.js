@@ -53,12 +53,15 @@ export default function Counter() {
 
   const increment = () => {
     /* STEP 4 */
+    setCount(count + 1)
+  
   };
   const decrement = () => {
     /* STEP 5 */
+    setCount(count - 1)
   };
   const reset = () => {
-    /* STEP 6 */
+    setCount(0)
   };
   const style = {
     fontSize: '1.5em',
@@ -71,9 +74,6 @@ export default function Counter() {
   if(count%2 !== 0){
     style.color = 'crimson'
     isEven = false
-  } else{
-    style.color = 'royalblue'
-    isEven = true
   }
 
   return (
